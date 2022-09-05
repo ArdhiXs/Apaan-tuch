@@ -765,14 +765,14 @@ ketik *.off delete* untuk mematikan pesan ini
   async GroupUpdate({ jid, desc, descId, descTime, descOwner, announce }) {
     if (!db.data.chats[jid].descUpdate) return
     if (!desc) return
-    let caption = `
+/*    let caption = `
     @${descOwner.split`@`[0]} telah mengubah deskripsi grup.
 
     ${desc}
 
     ketik *.off desc* untuk mematikan pesan ini
         `.trim()
-    this.send2But(jid, caption, wm3, 'Owner', '.owner', 'Menu', '.menu', { contextInfo: { mentionedJid: this.parseMention(caption) } })
+    this.send2But(jid, caption, wm3, 'Owner', '.owner', 'Menu', '.menu', { contextInfo: { mentionedJid: this.parseMention(caption) } }) */
 
   }
 }
@@ -808,16 +808,7 @@ global.dfail = (type, m, conn) => {
     }[type]
   if (msg) return conn.sendBut(m.chat, msg, '❑ Silahkan klik menu dibawah ini', 'Menu', '.menu', m) **/
  let unreg = {
-  unreg: `
-┏━━━〔 ıll 𝐑𝐄𝐆𝐈𝐒𝐓𝐄𝐑 llı 〕━━❑
-⬡ Hallo mypren👋, @${m.sender.split`@`[0]}
-⬡ Sebelum melihat fitur bot, lebih baik register dulu
-⬡ Kalau tidak kelihatan button nya, contohnya dibawah!
-┗━━━━━━━━━━━━━━━━━━❑
-┏━━〔 ıll CONTOH llı 〕━❑
-⬡ #daftar namamu.umurmu
-⬡ #daftar @${m.sender.split`@`[0]}.18
-┗━━━━━━━━━━❑ `
+  unreg: `ArdhiXs`
   }[type]
  if (unreg) return conn.sendBut(m.chat, unreg, '❑ Silahkan Klik reg dibawah ini ❑', 'Register', `.daftar @${m.sender.split`@`[0]}.18`, m)
  }
