@@ -31,9 +31,8 @@ let handler = async (m, { conn }) => {
 
               showAdAttribution: false,
               renderLargerThumbnail: true,
-              title: ' 兰｢ȺɍđħɨXs｣兰',
+              title: wm,
             } }
-            m.reply(stiker_wait)
             await conn.sendMessage(m.chat, {sticker: stiker, contextInfo: ekk}, {quoted:m})
         }
         else {
