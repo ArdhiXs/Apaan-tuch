@@ -1,5 +1,6 @@
 //=============『 Utama 』================== //
 global.owner = ['6288295249563','6288294052009'] //ganti pakai nomormu biar bot berfungsi
+global.wm = '兰｢ȺɍđħɨXs｣兰'
 
 //=============『 WM STICKER 』============== //
 global.packname = '卂尺刀卄工'
