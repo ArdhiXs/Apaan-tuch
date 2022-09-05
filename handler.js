@@ -698,7 +698,7 @@ module.exports = {
         let chat = global.db.data.chats[id] || {}
         let fetch = require('node-fetch')
         let text = ''
-        switch (action) {
+/*        switch (action) {
             case 'add':
             case 'remove':
                 if (chat.welcome) {
@@ -726,7 +726,7 @@ module.exports = {
                         mentionedJid: this.parseMention(text)
                     }
                 })
-                break
+                break */
         }
     },
     async delete(m) {
